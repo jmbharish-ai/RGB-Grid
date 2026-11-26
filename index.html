@@ -7,6 +7,10 @@
             body{
                 background-color: white;
                 text-align: center;
+                
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
             }
             .changed{
                 width: 200px; height: 100px;
@@ -40,7 +44,7 @@
         <script>
             const blueInput=document.getElementById("blue");
 
-            var nextAdd=15;
+            var nextAdd=5;
             for(var red=0; red<=255; red+=nextAdd){
                 for(var green=0; green<=255; green+=nextAdd){
                     var square=document.createElement("label");
